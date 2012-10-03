@@ -1,0 +1,8 @@
+from Bio import SeqIO
+print "Parsing"
+for seq_record in SeqIO.parse("ls_orchid.gbk", "genbank"):
+    print seq_record
+    print seq_record.seq
+    
+
+   

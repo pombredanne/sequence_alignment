@@ -1,0 +1,15 @@
+from Bio import SeqIO
+print "Parsing"
+#i=input("Enter first sequence: ");
+count=0;
+#seq_record.id is sequence id of record in database
+#seq_record.seq is sequence  in genbank databse
+for seq_record in SeqIO.parse("ls_orchid.gbk", "genbank"):
+    print "record id   "+seq_record.id
+    print "Sequence :  "+seq_record.seq
+    print len(seq_record)
+    print seq_record
+    
+    
+
+   

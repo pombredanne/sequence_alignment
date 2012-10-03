@@ -1,0 +1,12 @@
+from Bio import pairwise2
+from Bio.SubsMat import MatrixInfo as matlist
+matrix = matlist.blosum62
+#using BLOSUM62 substitution matrix for amino acids
+g=-2
+alpha=+1
+beta=-1
+first=input("Enter first sequence: ");
+second=input("Enter second sequence: ");
+for a in pairwise2.align.globalxx(first, second):
+    print pairwise2.format_alignment(*a)
+
